@@ -36,6 +36,9 @@ function sortearAmigo(){
     }
   //crear el indice aleatorio 
     let nombreGenerado = Math.floor(Math.random()*amigos.length);
+   //obtener el nombre que se sorteo
+    let amigoSorteado =amigos[nombreGenerado];
+    let resultado=document.getElementById('resultado');
 }
 function limpiarNombre(){
     document.querySelector('#amigo').value='';
