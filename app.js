@@ -17,6 +17,8 @@ limpiarNombre();
 function recogerNombres(){
   //obtner el elemento de la lista 
     let listaAmigos = document.getElementById('listaAmigos');
+  //limpiar la lista que ya existe 
+    listaAmigos.innerHTML="";
 }
 
 function limpiarNombre(){
