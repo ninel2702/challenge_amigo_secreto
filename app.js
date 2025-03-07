@@ -34,6 +34,8 @@ function sortearAmigo(){
     if (amigos.length===0){
         alert("no hay amigos para sortear,ingresa los nombres");
     }
+  //crear el indice aleatorio 
+    let nombreGenerado = Math.floor(Math.random()*amigos.length);
 }
 function limpiarNombre(){
     document.querySelector('#amigo').value='';
