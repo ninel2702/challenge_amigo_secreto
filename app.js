@@ -4,4 +4,8 @@ let amigos=[];
 function agregarAmigo(){
   //Capturar el valor del campo de entrada
 let nombreAmigo=(document.getElementById('amigo').value);
+  if (nombreAmigo === ""){
+    alert("por favor ingresa un nombre valido");
+    return;
+}
 }
