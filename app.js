@@ -14,9 +14,13 @@ console.log(nombreAmigo);
   //aqui se llama a la funcion nombre para que despues de mandar el nombre al arreglo de vacie 
 limpiarNombre();
 }
-function recogerNombres(){}
+function recogerNombres(){
+  //obtner el elemento de la lista 
+    let listaAmigos = document.getElementById('listaAmigos');
+}
 
 function limpiarNombre(){
     document.querySelector('#amigo').value='';
+  
 }
 agregarAmigo();
