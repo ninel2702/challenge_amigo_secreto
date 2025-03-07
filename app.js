@@ -19,6 +19,10 @@ function recogerNombres(){
     let listaAmigos = document.getElementById('listaAmigos');
   //limpiar la lista que ya existe 
     listaAmigos.innerHTML="";
+  //aqui se crean los elementos del arreglo y los muestra en forma de lista 
+    for (let i=0; i<amigos.length; i++){
+       let li= document.createElement("li");
+       li.textContent= amigos[i];}
 }
 
 function limpiarNombre(){
