@@ -22,7 +22,10 @@ function recogerNombres(){
   //aqui se crean los elementos del arreglo y los muestra en forma de lista 
     for (let i=0; i<amigos.length; i++){
        let li= document.createElement("li");
-       li.textContent= amigos[i];}
+       li.textContent= amigos[i];
+      //se crean nuevos elementos a la lista
+       listaAmigos.appendChild(li);
+    }
 }
 
 function limpiarNombre(){
