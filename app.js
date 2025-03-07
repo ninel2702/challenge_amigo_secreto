@@ -1,5 +1,6 @@
 //declarar la variable de los amigos primer commit del git 
 let amigos=[];
+
 //esta es la funcion de agregar amigo 
 function agregarAmigo(){
   //Capturar el valor del campo de entrada
@@ -9,11 +10,15 @@ let nombreAmigo=(document.getElementById('amigo').value);
     alert("por favor ingresa un nombre valido");
     return;
 }
-  amigos.push(nombreAmigo);
+  //cuando el valor es valido se agrega al arreglo con push 
+amigos.push(nombreAmigo);
 console.log(nombreAmigo);
   //aqui se llama a la funcion nombre para que despues de mandar el nombre al arreglo de vacie 
 limpiarNombre();
+  //se llama a la funcion para que se agrege un nuevo elemento y se observe en la pantalla
+recogerNombres();
 }
+
 function recogerNombres(){
   //obtner el elemento de la lista 
     let listaAmigos = document.getElementById('listaAmigos');
@@ -27,7 +32,6 @@ function recogerNombres(){
        listaAmigos.appendChild(li);
     }
 }
-
 //se crea un funcion para sortear amigos 
 function sortearAmigo(){
   //validar que el arreglo no este vacio 
@@ -39,10 +43,12 @@ function sortearAmigo(){
    //obtener el nombre que se sorteo
     let amigoSorteado =amigos[nombreGenerado];
     let resultado=document.getElementById('resultado');
+  //visualizar el resultado 
+    resultado.innerHTML="tu amigo secreto es:"+ amigoSorteado;
 }
+
 function limpiarNombre(){
     document.querySelector('#amigo').value='';
-  
 }
 agregarAmigo();
 sortearAmigo();
