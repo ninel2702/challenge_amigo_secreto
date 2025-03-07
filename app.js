@@ -29,7 +29,12 @@ function recogerNombres(){
 }
 
 //se crea un funcion para sortear amigos 
-function sortearAmigo(){}
+function sortearAmigo(){
+  //validar que el arreglo no este vacio 
+    if (amigos.length===0){
+        alert("no hay amigos para sortear,ingresa los nombres");
+    }
+}
 function limpiarNombre(){
     document.querySelector('#amigo').value='';
   
