@@ -28,8 +28,11 @@ function recogerNombres(){
     }
 }
 
+//se crea un funcion para sortear amigos 
+function sortearAmigo(){}
 function limpiarNombre(){
     document.querySelector('#amigo').value='';
   
 }
 agregarAmigo();
+sortearAmigo();
